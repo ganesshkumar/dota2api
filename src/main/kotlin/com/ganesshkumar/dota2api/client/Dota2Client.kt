@@ -30,4 +30,10 @@ class Dota2Client(val apiKey: String) {
         val response = client.items(apiKey)
         return response.result.items
     }
+
+    fun prizePool(leagueId: Int): Int {
+        val response = client.prizePool(apiKey, leagueId)
+        println(response)
+        return response.result.prizePool
+    }
 }

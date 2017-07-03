@@ -14,4 +14,7 @@ interface FeignDota2Client {
 
     @RequestLine("GET ${API_URLS.ITEMS_URL}?key={key}")
     fun items(@Param("key") apiKey: String): Response<ItemsResult>
+
+    @RequestLine("GET ${API_URLS.TOURNAMENT_PRIZE_POOL}?key={key}&leagueid={leagueid}")
+    fun prizePool(@Param("key") apiKey: String, @Param("leagueid") leagueId: Int): Response<PrizePoolResult>
 }
