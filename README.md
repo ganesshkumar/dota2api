@@ -27,4 +27,6 @@ fun main(args: Array<String>) {
 
 ---
 
-Inspired from python library [dota2api](https://dota2api.readthedocs.io/en/latest/installation.html)
+[API Details](https://wiki.teamfortress.com/wiki/WebAPI)
+
+Inspired [dota2api](https://dota2api.readthedocs.io/en/latest/installation.html)
