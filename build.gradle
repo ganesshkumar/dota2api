@@ -20,6 +20,10 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "com.netflix.feign:feign-core:8.18.0"
+    compile "com.netflix.feign:feign-gson:8.18.0"
+
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.8.7"
 }
 
 compileKotlin {
