@@ -2,9 +2,9 @@ package com.ganesshkumar.dota2api.models
 
 import com.ganesshkumar.dota2api.constants.API_URLS
 
-class Hero(var id: String, var name: String) {
-    var images: Images
-    var heroName: String
+class Hero(val id: Int, val name: String) {
+    val images: Images
+    val heroName: String
 
     init {
         // substring(14) removes `npc_dota_hero_`
